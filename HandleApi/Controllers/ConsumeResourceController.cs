@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace HandleApi.Controllers
@@ -19,22 +20,18 @@ namespace HandleApi.Controllers
         public ConsumeResourceController(ResourcesContext resourcesContext)
         {
             db = resourcesContext;
-            if (!db.ResourcesConsumers.Any())
+            if (!db.ElectroConsume.Any())
             {
-                db.ResourcesConsumers.Add(new ResourcesConsumersContext
-                {
-                    ElectroConsumeModel = new ElectroConsume
-                    {
+                db.ElectroConsume.Add(
+                    new ElectroConsume { 
                         DateOfPoint = new DateTime(24, 03, 2022),
-                        Value = 5493,
+                        Value = 5493, 
                         TransitionMethod = TransitionMethodEnum.Portal
-                    },
-
-                    WhaterConsumeModel = null
-
-                });
+                    }
+                );
 
                 db.SaveChanges();
+
             }
         }
 
@@ -42,6 +39,12 @@ namespace HandleApi.Controllers
         public async Task<ActionResult<IEnumerable<ResourcesConsumersContext>>> Get()
         {
             return await db.ResourcesConsumers.ToListAsync();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ResourcesConsumersContext>> Get(int id)
+        {
+            ResourcesConsumersContext consumersContext = db.ResourcesConsumers.Select(x => x).FirstOrDefault();
         }
     }
 }
