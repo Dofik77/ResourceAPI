@@ -1,13 +1,13 @@
 ﻿using System;
 using EnergoStatApi.Interfaces;
 
-namespace EnergoStatApi.Models
+namespace EnergoStatApi.Models.ApiModels
 {
-    public class ElectroConsume : IResourceConsume
+    public class ElectricConsumption : IResourceConsumption
     {
         public int Id { get; set; }
         public DateTime DateOfPoint { get; set; }
         public int Value { get; set; }
-        public TransitionMethodEnum TransitionMethod { get; set; } 
+        public TransitionMethod TransitionMethod { get; set; }
     }
 }

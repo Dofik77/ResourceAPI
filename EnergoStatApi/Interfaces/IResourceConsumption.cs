@@ -2,15 +2,15 @@
 
 namespace EnergoStatApi.Interfaces
 {
-    public interface IResourceConsume
+    public interface IResourceConsumption
     {
         public int Id { get; set; }
         public DateTime DateOfPoint { get; set; }
         public int Value { get; set; }
-        public TransitionMethodEnum TransitionMethod { get; set; }
+        public TransitionMethod TransitionMethod { get; set; }
     }
 
-    public enum TransitionMethodEnum
+    public enum TransitionMethod
     {
         Portal,
         Operator,

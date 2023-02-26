@@ -1,5 +1,5 @@
 ﻿using EnergoStatApi.Interfaces;
-using EnergoStatApi.Models;
+using EnergoStatApi.Models.ApiModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,36 +14,36 @@ namespace EnergoStatApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ConsumeResourceController : ControllerBase
+    public class ConsumptionResourceController : ControllerBase
     {
-        ElectroConsume electroFirst;
-        ElectroConsume electroSecond;
-        ElectroConsume electroThird;
+        ElectricConsumption electroFirst;
+        ElectricConsumption electroSecond;
+        ElectricConsumption electroThird;
 
-        List<ElectroConsume> electroConsumesList = new List<ElectroConsume>();
-        List<WhaterConsume>  whaterConsumesList = new List<WhaterConsume>();
+        List<IResourceConsumption> electroConsumesList = new List<IResourceConsumption>();
+        List<IResourceConsumption>  whaterConsumesList = new List<IResourceConsumption>();
 
-        public ConsumeResourceController(ResourcesContext resourcesContext)
+        public ConsumptionResourceController()
         {
-            electroFirst = new ElectroConsume
+            electroFirst = new ElectricConsumption
             {
-                DateOfPoint = new DateTime(24, 03, 2022),
+                DateOfPoint = new DateTime(2022, 03, 24),
                 Value = 5493,
-                TransitionMethod = TransitionMethodEnum.Portal
+                TransitionMethod = TransitionMethod.Portal
             };
 
-            electroSecond = new ElectroConsume
+            electroSecond = new ElectricConsumption
             {
-                DateOfPoint = new DateTime(24, 03, 2022),
+                DateOfPoint = new DateTime(2022, 03, 24),
                 Value = 5493,
-                TransitionMethod = TransitionMethodEnum.Portal
+                TransitionMethod = TransitionMethod.Portal
             };
 
-            electroThird = new ElectroConsume
+            electroThird = new ElectricConsumption
             {
-                DateOfPoint = new DateTime(24, 03, 2022),
+                DateOfPoint = new DateTime(2022, 03, 24),
                 Value = 5493,
-                TransitionMethod = TransitionMethodEnum.Portal
+                TransitionMethod = TransitionMethod.Portal
             };
 
             electroConsumesList.Add(electroFirst);
@@ -52,10 +52,11 @@ namespace EnergoStatApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<KeyValuePair<int,int>>>> GetElectroConsumeXY()
+        public async Task<ActionResult<List<KeyValuePair<int, int>>>> GetElectroConsumeGraph()
         {
-            var resourceConumerXY = new ResourceConsumeXY(electroConsumesList);
+            var resourcesVector = new ConsumptionGraph();
+            var vectorData = resourcesVector.GetConsumptionGraph(electroConsumesList);
+            return vectorData;
         }
-
     }
 }

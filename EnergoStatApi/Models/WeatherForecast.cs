@@ -1,6 +1,6 @@
 using System;
 
-namespace EnergoStatApi
+namespace EnergoStatApi.Models
 {
     public class WeatherForecast
     {
