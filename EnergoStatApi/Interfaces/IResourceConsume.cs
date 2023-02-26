@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HandleApi.Interfaces
+namespace EnergoStatApi.Interfaces
 {
     public interface IResourceConsume
     {

@@ -1,7 +1,7 @@
 ﻿using System;
-using HandleApi.Interfaces;
+using EnergoStatApi.Interfaces;
 
-namespace HandleApi.Models
+namespace EnergoStatApi.Models
 {
     public class ElectroConsume : IResourceConsume
     {

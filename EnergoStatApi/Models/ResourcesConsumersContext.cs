@@ -1,4 +1,4 @@
-﻿namespace HandleApi.Models
+﻿namespace EnergoStatApi.Models
 {
     public class ResourcesConsumersContext
     {

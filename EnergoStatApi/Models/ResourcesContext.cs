@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace HandleApi.Models
+namespace EnergoStatApi.Models
 {
     public class ResourcesContext : DbContext
-    {
-        public DbSet<ResourcesConsumersContext> ResourcesConsumers { get; set; }
+    { 
         public DbSet<ElectroConsume> ElectroConsume { get; set; }
         public DbSet<WhaterConsume> WhaterConsume { get; set; }
 
@@ -13,5 +12,7 @@ namespace HandleApi.Models
         {
             Database.EnsureCreated();
         }
+
+
     }
 }

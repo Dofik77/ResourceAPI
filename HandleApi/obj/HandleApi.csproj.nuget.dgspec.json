@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C_C#\\ResourceAPI\\HandleApi\\HandleApi.csproj": {}
+    "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/HandleApi.csproj": {}
   },
   "projects": {
-    "D:\\C_C#\\ResourceAPI\\HandleApi\\HandleApi.csproj": {
+    "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/HandleApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C_C#\\ResourceAPI\\HandleApi\\HandleApi.csproj",
+        "projectUniqueName": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/HandleApi.csproj",
         "projectName": "HandleApi",
-        "projectPath": "D:\\C_C#\\ResourceAPI\\HandleApi\\HandleApi.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\C_C#\\ResourceAPI\\HandleApi\\obj\\",
+        "projectPath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/HandleApi.csproj",
+        "packagesPath": "/Users/stanislav/.nuget/packages/",
+        "outputPath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/stanislav/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +38,7 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.32, )"
             }
@@ -56,6 +54,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[3.1.32, 3.1.32]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -64,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }
