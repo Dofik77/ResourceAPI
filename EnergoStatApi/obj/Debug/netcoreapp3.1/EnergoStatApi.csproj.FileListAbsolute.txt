@@ -77,6 +77,9 @@ D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\EnergoStatApi.runtimec
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\EnergoStatApi.runtimeconfig.dev.json
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\EnergoStatApi.dll
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\EnergoStatApi.pdb
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\System.Web.Http.Owin.dll
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
@@ -92,6 +95,11 @@ D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.L
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.Owin.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.Owin.Host.HttpListener.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.Owin.Hosting.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Owin.dll
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\HandleApi.dll

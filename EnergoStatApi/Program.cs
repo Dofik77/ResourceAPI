@@ -13,6 +13,7 @@ namespace EnergoStatApi
     {
         public static void Main(string[] args)
         {
+            AppContext.SetSwitch("optionsBuilder.UseSqlServer(\"Server=(localdb)\\\\mssqllocaldb;Database=helloappdb;Trusted_Connection=True;\");", true);
             CreateHostBuilder(args).Build().Run();
         }
 

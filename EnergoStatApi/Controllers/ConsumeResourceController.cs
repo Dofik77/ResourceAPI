@@ -1,5 +1,6 @@
 ﻿using EnergoStatApi.Interfaces;
 using EnergoStatApi.Models.ApiModels;
+using EnergoStatApi.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -25,8 +26,11 @@ namespace EnergoStatApi.Controllers
 
         public ConsumptionResourceController()
         {
+
+
             electroFirst = new ElectricConsumption
             {
+                
                 DateOfPoint = new DateTime(2022, 03, 24),
                 Value = 5493,
                 TransitionMethod = TransitionMethod.Portal
@@ -54,7 +58,7 @@ namespace EnergoStatApi.Controllers
         [HttpGet]
         public async Task<ActionResult<List<KeyValuePair<int, int>>>> GetElectroConsumeGraph()
         {
-            var resourcesVector = new ConsumptionGraph();
+            var resourcesVector = new ConsumptionGraphService();
             var vectorData = resourcesVector.GetConsumptionGraph(electroConsumesList);
             return vectorData;
         }
