@@ -31,8 +31,8 @@
     ".NETCoreApp,Version=v3.1": {
       "HandleApi/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNet.WebApi.OwinSelfHost": "5.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.32",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "3.1.18",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -237,7 +237,7 @@
           "System.Resources.Reader": "4.1.2.0",
           "System.Resources.ResourceManager": "4.1.2.0",
           "System.Resources.Writer": "4.1.2.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.0.6.0",
+          "System.Runtime.CompilerServices.Unsafe.Reference": "4.0.6.0",
           "System.Runtime.CompilerServices.VisualC": "4.1.2.0",
           "System.Runtime": "4.2.2.0",
           "System.Runtime.Extensions": "4.2.2.0",
@@ -310,57 +310,6 @@
           "HandleApi.dll": {}
         }
       },
-      "Microsoft.AspNet.WebApi.Client/5.0.0": {
-        "dependencies": {
-          "Newtonsoft.Json": "4.5.11"
-        },
-        "runtime": {
-          "lib/net45/System.Net.Http.Formatting.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.11001.0"
-          }
-        },
-        "compile": {
-          "lib/net45/System.Net.Http.Formatting.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebApi.Core/5.0.0": {
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "5.0.0"
-        },
-        "runtime": {
-          "lib/net45/System.Web.Http.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.11001.0"
-          }
-        },
-        "compile": {
-          "lib/net45/System.Web.Http.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebApi.Owin/5.0.0": {
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Core": "5.0.0",
-          "Microsoft.Owin": "2.0.0",
-          "Owin": "1.0.0"
-        },
-        "runtime": {
-          "lib/net45/System.Web.Http.Owin.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.11001.0"
-          }
-        },
-        "compile": {
-          "lib/net45/System.Web.Http.Owin.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebApi.OwinSelfHost/5.0.0": {
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Owin": "5.0.0",
-          "Microsoft.Owin.Host.HttpListener": "2.0.0",
-          "Microsoft.Owin.Hosting": "2.0.0"
-        }
-      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -418,6 +367,20 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/3.1.32": {},
+      "Microsoft.EntityFrameworkCore.Relational/3.1.18": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.32"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "assemblyVersion": "3.1.18.0",
+            "fileVersion": "3.100.1821.36403"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/3.1.32": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "3.1.32"
@@ -570,66 +533,35 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "Microsoft.Owin/2.0.0": {
+      "Npgsql/4.1.9": {
         "dependencies": {
-          "Owin": "1.0.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
         },
         "runtime": {
-          "lib/net45/Microsoft.Owin.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.20911.395"
+          "lib/netcoreapp3.0/Npgsql.dll": {
+            "assemblyVersion": "4.1.9.0",
+            "fileVersion": "4.1.9.0"
           }
         },
         "compile": {
-          "lib/net45/Microsoft.Owin.dll": {}
+          "lib/netcoreapp3.0/Npgsql.dll": {}
         }
       },
-      "Microsoft.Owin.Host.HttpListener/2.0.0": {
-        "runtime": {
-          "lib/net45/Microsoft.Owin.Host.HttpListener.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.20911.395"
-          }
-        },
-        "compile": {
-          "lib/net45/Microsoft.Owin.Host.HttpListener.dll": {}
-        }
-      },
-      "Microsoft.Owin.Hosting/2.0.0": {
+      "Npgsql.EntityFrameworkCore.PostgreSQL/3.1.18": {
         "dependencies": {
-          "Microsoft.Owin": "2.0.0",
-          "Owin": "1.0.0"
+          "Microsoft.EntityFrameworkCore": "3.1.32",
+          "Microsoft.EntityFrameworkCore.Abstractions": "3.1.32",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.18",
+          "Npgsql": "4.1.9"
         },
         "runtime": {
-          "lib/net45/Microsoft.Owin.Hosting.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.20911.395"
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "assemblyVersion": "3.1.18.0",
+            "fileVersion": "3.1.18.0"
           }
         },
         "compile": {
-          "lib/net45/Microsoft.Owin.Hosting.dll": {}
-        }
-      },
-      "Newtonsoft.Json/4.5.11": {
-        "runtime": {
-          "lib/net40/Newtonsoft.Json.dll": {
-            "assemblyVersion": "4.5.0.0",
-            "fileVersion": "4.5.11.15520"
-          }
-        },
-        "compile": {
-          "lib/net40/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Owin/1.0.0": {
-        "runtime": {
-          "lib/net40/Owin.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net40/Owin.dll": {}
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
       "System.Collections.Immutable/1.7.1": {
@@ -655,6 +587,7 @@
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0": {},
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -1879,7 +1812,7 @@
         },
         "compileOnly": true
       },
-      "System.Runtime.CompilerServices.Unsafe/4.0.6.0": {
+      "System.Runtime.CompilerServices.Unsafe.Reference/4.0.6.0": {
         "compile": {
           "System.Runtime.CompilerServices.Unsafe.dll": {}
         },
@@ -2277,34 +2210,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNet.WebApi.Client/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OMTp9ot40TZgZxnFO+S0ac0EY5CtQs6KTHkMSHmNFDc+a0tWMCsSBuOG6HoH9+G95wNhEfZrZ20btAsHMlQe7w==",
-      "path": "microsoft.aspnet.webapi.client/5.0.0",
-      "hashPath": "microsoft.aspnet.webapi.client.5.0.0.nupkg.sha512"
-    },
-    "Microsoft.AspNet.WebApi.Core/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ZOVLLtFpSM8nkJopUM9upbJEUkAUS60j6Sj1hDKewHaekWMUnnoMX/i3Ee+7KgxMGk13yxxQRHtSwcjh1JpJ4w==",
-      "path": "microsoft.aspnet.webapi.core/5.0.0",
-      "hashPath": "microsoft.aspnet.webapi.core.5.0.0.nupkg.sha512"
-    },
-    "Microsoft.AspNet.WebApi.Owin/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OSDZF5ORUm+SfyToL4xtR5+ZEaawR6zBaSLtMTfJ1EDPrxXXD5cC9ci3YxnpyVcQVKvs+32U/D72tqssnzvk7A==",
-      "path": "microsoft.aspnet.webapi.owin/5.0.0",
-      "hashPath": "microsoft.aspnet.webapi.owin.5.0.0.nupkg.sha512"
-    },
-    "Microsoft.AspNet.WebApi.OwinSelfHost/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JMzM1d6Slcy7sXhWos7/BFyvT08OwvltVJyc1Pj6Qcge+iRuNel4RYV2AXVD513iUd7ZpQNP5WbQGxiViMebcg==",
-      "path": "microsoft.aspnet.webapi.owinselfhost/5.0.0",
-      "hashPath": "microsoft.aspnet.webapi.owinselfhost.5.0.0.nupkg.sha512"
-    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
       "serviceable": true,
@@ -2339,6 +2244,13 @@
       "sha512": "sha512-yvQBsos0/oAqN9rjcTRAFflBRcgFd8JINb9m0Zl7y12ac5jswvD8ILNVDSu5UCAd1y84xehjRKcq2ptIceBeGg==",
       "path": "microsoft.entityframeworkcore.analyzers/3.1.32",
       "hashPath": "microsoft.entityframeworkcore.analyzers.3.1.32.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Relational/3.1.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Gn1muuph+wShFI3Ywta9FyvWHM6oEEvIUjP2y53a0qkJnMgwYp/nw0oDXMJj920E2YYqldn3Yp0eHBP6cYME4w==",
+      "path": "microsoft.entityframeworkcore.relational/3.1.18",
+      "hashPath": "microsoft.entityframeworkcore.relational.3.1.18.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/3.1.32": {
       "type": "package",
@@ -2417,40 +2329,19 @@
       "path": "microsoft.extensions.primitives/3.1.32",
       "hashPath": "microsoft.extensions.primitives.3.1.32.nupkg.sha512"
     },
-    "Microsoft.Owin/2.0.0": {
+    "Npgsql/4.1.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-os1K9NezNGFPMkjtkNGnTDkgnKYUQCQniHYoTHtqQFhf/uiHCpcT9457hyHXZSWEglAZFaXJZQr74bZkgdE7Bw==",
-      "path": "microsoft.owin/2.0.0",
-      "hashPath": "microsoft.owin.2.0.0.nupkg.sha512"
+      "sha512": "sha512-Afs+nX8OWZ8PPZRj7vdtjcj0xKQDZbl8b0jXUmDBuKgzEkHatX/fPu1NtgbCin14EkoyMMxKtQnagfoMC58i+Q==",
+      "path": "npgsql/4.1.9",
+      "hashPath": "npgsql.4.1.9.nupkg.sha512"
     },
-    "Microsoft.Owin.Host.HttpListener/2.0.0": {
+    "Npgsql.EntityFrameworkCore.PostgreSQL/3.1.18": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xTNP8Qie4M6dzfJpFEnIYcg+y3rUtEXjXLvRdv3C+ILsXiCpikJNnCHj0OLkQD36Ga5zHvsco4JheuFOoj/RwQ==",
-      "path": "microsoft.owin.host.httplistener/2.0.0",
-      "hashPath": "microsoft.owin.host.httplistener.2.0.0.nupkg.sha512"
-    },
-    "Microsoft.Owin.Hosting/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ct4wxPUgt7DL7oA+g4bpTcCqlPyGCrMo+Y+larWoH7y1GYlncc00cvUR4XAOROW3IY64VTIFosM9fGSj/UUHSg==",
-      "path": "microsoft.owin.hosting/2.0.0",
-      "hashPath": "microsoft.owin.hosting.2.0.0.nupkg.sha512"
-    },
-    "Newtonsoft.Json/4.5.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IZ0vmfvcJrUONMIG3St+1EzSlnHc9qFY6/FU2YMHNXaGtdm6sSwIUAdXPAw1k3IwpxjVmZ0w9Pzszd8GkyrpFA==",
-      "path": "newtonsoft.json/4.5.11",
-      "hashPath": "newtonsoft.json.4.5.11.nupkg.sha512"
-    },
-    "Owin/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
-      "path": "owin/1.0.0",
-      "hashPath": "owin.1.0.0.nupkg.sha512"
+      "sha512": "sha512-b/g8tKEMVew45q0g1hZGUQwpzv/UE9NIyU2UNB9Ln8NNhodjhkUrzeMS49lPKFlFRW1aUK5eniKgebki/D3Aag==",
+      "path": "npgsql.entityframeworkcore.postgresql/3.1.18",
+      "hashPath": "npgsql.entityframeworkcore.postgresql.3.1.18.nupkg.sha512"
     },
     "System.Collections.Immutable/1.7.1": {
       "type": "package",
@@ -2472,6 +2363,13 @@
       "sha512": "sha512-j81Lovt90PDAq8kLpaJfJKV/rWdWuEk6jfV+MBkee33vzYLEUsy4gXK8laa9V2nZlLM9VM9yA/OOQxxPEJKAMw==",
       "path": "system.diagnostics.diagnosticsource/4.7.1",
       "hashPath": "system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",
@@ -3493,7 +3391,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Runtime.CompilerServices.Unsafe/4.0.6.0": {
+    "System.Runtime.CompilerServices.Unsafe.Reference/4.0.6.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
