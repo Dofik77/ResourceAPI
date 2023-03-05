@@ -30,7 +30,7 @@ namespace EnergoStatApi.Controllers
 
             electroFirst = new ElectricConsumption
             {
-                
+                Id = 1,
                 DateOfPoint = new DateTime(2022, 03, 24),
                 Value = 5493,
                 TransitionMethod = TransitionMethod.Portal
@@ -38,6 +38,7 @@ namespace EnergoStatApi.Controllers
 
             electroSecond = new ElectricConsumption
             {
+                Id = 1,
                 DateOfPoint = new DateTime(2022, 03, 24),
                 Value = 5493,
                 TransitionMethod = TransitionMethod.Portal
@@ -45,6 +46,7 @@ namespace EnergoStatApi.Controllers
 
             electroThird = new ElectricConsumption
             {
+                Id = 1,
                 DateOfPoint = new DateTime(2022, 03, 24),
                 Value = 5493,
                 TransitionMethod = TransitionMethod.Portal

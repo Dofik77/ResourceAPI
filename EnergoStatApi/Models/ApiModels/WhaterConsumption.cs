@@ -3,9 +3,9 @@ using EnergoStatApi.Interfaces;
 
 namespace EnergoStatApi.Models.ApiModels
 {
-    public class WhaterConsumption : IIdentifiable
+    public class WhaterConsumption : IResourceConsumption
     {
-        public int Id { get; }
+        public int Id { get; set; }
 
         public WhaterConsumption(int id, DateTime dateOfPoint, int value, TransitionMethod transitionMethod)
         {

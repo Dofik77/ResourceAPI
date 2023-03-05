@@ -3,23 +3,23 @@ using EnergoStatApi.Interfaces;
 
 namespace EnergoStatApi.Models.ApiModels
 {
-    public class ElectricConsumption : IIdentifiable
+    public class ElectricConsumption : IResourceConsumption
     {
-        public int Id { get; }
-
-        public ElectricConsumption(int id, DateTime dateOfPoint, int value, TransitionMethod transitionMethod)
-        {
-            Id = id;
-            DateOfPoint = dateOfPoint;
-            Value = value;
-            TransitionMethod = transitionMethod;
-        }
+        public int Id { get; set; }
 
         public DateTime DateOfPoint { get; set; }
 
         public int Value { get; set; }
 
         public TransitionMethod TransitionMethod { get; set; }
-
+      
     }
+
+    public enum TransitionMethod
+    {
+        Portal,
+        Operator,
+        LK_TES
+    }
+
 }
