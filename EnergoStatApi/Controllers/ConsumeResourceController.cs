@@ -20,7 +20,7 @@ namespace EnergoStatApi.Controllers
             _electricRepository = electricRepository;
         }
 
-        [HttpGet]
+        [HttpGet, Route("ElectricConsume")]
         public async Task<ActionResult<List<KeyValuePair<int, double>>>> GetElectroConsumeGraph()
         {
             var resourcesVector = new ConsumptionGraphService();
@@ -43,6 +43,7 @@ namespace EnergoStatApi.Controllers
     {
         public static string UploadFile()
         {
+
             return "Ok";
         }
     }
