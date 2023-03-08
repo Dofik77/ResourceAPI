@@ -1,0 +1,5 @@
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStat.Domain.csproj.AssemblyReference.cache
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStat.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStat.Domain.AssemblyInfoInputs.cache
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStat.Domain.AssemblyInfo.cs
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStat.Domain.csproj.CoreCompileInputs.cache

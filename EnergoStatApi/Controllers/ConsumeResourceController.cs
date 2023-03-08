@@ -1,15 +1,10 @@
-﻿using EnergoStatApi.Interfaces;
-using EnergoStatApi.Models;
-using EnergoStatApi.Models.ApiModels;
-using EnergoStatApi.Service;
+﻿using EnergoStatApi.DAL.Interfaces;
+using EnergoStatApi.Domain.Entity;
+using EnergoStatApi.Domain.Interface;
+using EnergoStatApi.Domain.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace EnergoStatApi.Controllers
@@ -18,59 +13,37 @@ namespace EnergoStatApi.Controllers
     [ApiController]
     public class ConsumptionResourceController : ControllerBase
     {
-        ElectricConsumption electroFirst;
-        ElectricConsumption electroSecond;
-        ElectricConsumption electroThird;
+        private readonly IElectricConsumeRepository _electricRepository;
 
-        List<IResourceConsumption> electroConsumesList = new List<IResourceConsumption>();
-        List<IResourceConsumption>  whaterConsumesList = new List<IResourceConsumption>();
-
-        public ConsumptionResourceController()
+        private ConsumptionResourceController(IElectricConsumeRepository electricRepository)
         {
-            using (ApplicationContext db = new ApplicationContext())
-            {
-                electroFirst = new ElectricConsumption
-                {
-                    Id = 1,
-                    DateOfPoint = new DateTime(2022, 01, 24),
-                    Value = 5123,
-                    TransitionMethod = TransitionMethod.Portal
-                };
-
-                electroSecond = new ElectricConsumption
-                {
-                    Id = 2,
-                    DateOfPoint = new DateTime(2022, 02, 24),
-                    Value = 5451,
-                    TransitionMethod = TransitionMethod.Portal
-                };
-
-                electroThird = new ElectricConsumption
-                {
-                    Id = 3,
-                    DateOfPoint = new DateTime(2022, 03, 24),
-                    Value = 5890,
-                    TransitionMethod = TransitionMethod.Portal
-                };
-
-                db.Add(electroFirst);
-                db.Add(electroSecond);
-                db.Add(electroThird);
-                db.SaveChanges();
-            }
-
-            electroConsumesList.Add(electroFirst);
-            electroConsumesList.Add(electroSecond);
-            electroConsumesList.Add(electroThird);
+            _electricRepository = electricRepository;
         }
 
-
         [HttpGet]
-        public async Task<ActionResult<List<KeyValuePair<int, int>>>> GetElectroConsumeGraph()
+        public async Task<ActionResult<List<KeyValuePair<int, double>>>> GetElectroConsumeGraph()
         {
             var resourcesVector = new ConsumptionGraphService();
-            var vectorData = resourcesVector.GetConsumptionGraph(electroConsumesList);
+            var response =  await _electricRepository.Select();
+
+            var vectorData = resourcesVector.GetConsumptionGraphService(response); 
             return vectorData;
+        }
+
+        [HttpPost]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
+        public async Task<ActionResult> PostConsumeData()
+        {
+            var result = GetConsumeData.UploadFile();
+            return Ok(result);
+        }
+    }
+
+    public class GetConsumeData
+    {
+        public static string UploadFile()
+        {
+            return "Ok";
         }
     }
 }

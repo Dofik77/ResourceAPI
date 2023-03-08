@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/SelfHost/SelfHost.csproj": {}
+    "D:\\C_C#\\ResourceAPI\\SelfHost\\SelfHost.csproj": {}
   },
   "projects": {
-    "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/EnergoStatApi/EnergoStatApi.csproj": {
+    "D:\\C_C#\\ResourceAPI\\EnergoStatApi\\EnergoStatApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/EnergoStatApi/EnergoStatApi.csproj",
+        "projectUniqueName": "D:\\C_C#\\ResourceAPI\\EnergoStatApi\\EnergoStatApi.csproj",
         "projectName": "EnergoStatApi",
-        "projectPath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/EnergoStatApi/EnergoStatApi.csproj",
-        "packagesPath": "/Users/stanislav/.nuget/packages/",
-        "outputPath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/EnergoStatApi/obj/",
+        "projectPath": "D:\\C_C#\\ResourceAPI\\EnergoStatApi\\EnergoStatApi.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C_C#\\ResourceAPI\\EnergoStatApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/stanislav/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/HandleApi.csproj": {
-                "projectPath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/HandleApi.csproj"
+              "D:\\C_C#\\ResourceAPI\\HandleApi\\HandleApi.csproj": {
+                "projectPath": "D:\\C_C#\\ResourceAPI\\HandleApi\\HandleApi.csproj"
               }
             }
           }
@@ -52,20 +54,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[3.1.32, 3.1.32]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -74,26 +62,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/HandleApi.csproj": {
+    "D:\\C_C#\\ResourceAPI\\HandleApi\\HandleApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/HandleApi.csproj",
+        "projectUniqueName": "D:\\C_C#\\ResourceAPI\\HandleApi\\HandleApi.csproj",
         "projectName": "HandleApi",
-        "projectPath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/HandleApi.csproj",
-        "packagesPath": "/Users/stanislav/.nuget/packages/",
-        "outputPath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/HandleApi/obj/",
+        "projectPath": "D:\\C_C#\\ResourceAPI\\HandleApi\\HandleApi.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C_C#\\ResourceAPI\\HandleApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/stanislav/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -112,13 +102,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.AspNet.WebApi.OwinSelfHost": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.32, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.18, )"
             }
           },
           "imports": [
@@ -132,20 +122,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[3.1.32, 3.1.32]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -154,34 +130,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/SelfHost/SelfHost.csproj": {
+    "D:\\C_C#\\ResourceAPI\\SelfHost\\SelfHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/SelfHost/SelfHost.csproj",
+        "projectUniqueName": "D:\\C_C#\\ResourceAPI\\SelfHost\\SelfHost.csproj",
         "projectName": "SelfHost",
-        "projectPath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/SelfHost/SelfHost.csproj",
-        "packagesPath": "/Users/stanislav/.nuget/packages/",
-        "outputPath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/SelfHost/obj/",
+        "projectPath": "D:\\C_C#\\ResourceAPI\\SelfHost\\SelfHost.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C_C#\\ResourceAPI\\SelfHost\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/stanislav/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/EnergoStatApi/EnergoStatApi.csproj": {
-                "projectPath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/EnergoStatApi/EnergoStatApi.csproj"
+              "D:\\C_C#\\ResourceAPI\\EnergoStatApi\\EnergoStatApi.csproj": {
+                "projectPath": "D:\\C_C#\\ResourceAPI\\EnergoStatApi\\EnergoStatApi.csproj"
               }
             }
           }
@@ -206,26 +184,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[3.1.32, 3.1.32]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

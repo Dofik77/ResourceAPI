@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\EnergoStatApi.Domain.csproj" />
+    <ProjectReference Include="..\EnergoStatApi.DAL\EnergoStatApi.DAL.csproj" />
+  </ItemGroup>
+</Project>

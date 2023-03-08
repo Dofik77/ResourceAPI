@@ -1,121 +1,32 @@
 {
   "version": 2,
-  "dgSpecHash": "VszRqXZ1k7XWcxoRNrZs0NqZtqFyIveHfE8DolCBX+u23RnsuUDw1lOS6ANuGzFHO84XjuOcKKhYOeVZuBLP1Q==",
+  "dgSpecHash": "sEnWnDXKjQ3RvCr//BYpg1R+8TS7KbjpaK+jS5gOjvXtAFdpPcqMfgAfMn9vEVT/9oQ/AxDp1pYke6rtKZmC7g==",
   "success": true,
-  "projectFilePath": "/Users/stanislav/Desktop/Dev/AnotherProject/ResourceAPI/SelfHost/SelfHost.csproj",
+  "projectFilePath": "D:\\C_C#\\ResourceAPI\\SelfHost\\SelfHost.csproj",
   "expectedPackageFiles": [
-    "/Users/stanislav/.nuget/packages/microsoft.aspnet.webapi.client/5.0.0/microsoft.aspnet.webapi.client.5.0.0.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.aspnet.webapi.core/5.0.0/microsoft.aspnet.webapi.core.5.0.0.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.aspnet.webapi.owin/5.0.0/microsoft.aspnet.webapi.owin.5.0.0.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.aspnet.webapi.owinselfhost/5.0.0/microsoft.aspnet.webapi.owinselfhost.5.0.0.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.entityframeworkcore/3.1.32/microsoft.entityframeworkcore.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.entityframeworkcore.abstractions/3.1.32/microsoft.entityframeworkcore.abstractions.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.entityframeworkcore.analyzers/3.1.32/microsoft.entityframeworkcore.analyzers.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.32/microsoft.extensions.caching.abstractions.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.caching.memory/3.1.32/microsoft.extensions.caching.memory.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.configuration/3.1.32/microsoft.extensions.configuration.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.32/microsoft.extensions.configuration.abstractions.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.configuration.binder/3.1.32/microsoft.extensions.configuration.binder.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.32/microsoft.extensions.dependencyinjection.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.32/microsoft.extensions.dependencyinjection.abstractions.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.logging/3.1.32/microsoft.extensions.logging.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.32/microsoft.extensions.logging.abstractions.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.options/3.1.32/microsoft.extensions.options.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.extensions.primitives/3.1.32/microsoft.extensions.primitives.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.owin/2.0.0/microsoft.owin.2.0.0.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.owin.host.httplistener/2.0.0/microsoft.owin.host.httplistener.2.0.0.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.owin.hosting/2.0.0/microsoft.owin.hosting.2.0.0.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/newtonsoft.json/4.5.11/newtonsoft.json.4.5.11.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/owin/1.0.0/owin.1.0.0.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.32/microsoft.netcore.app.host.osx-x64.3.1.32.nupkg.sha512",
-    "/Users/stanislav/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.32\\microsoft.entityframeworkcore.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.32\\microsoft.entityframeworkcore.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.32\\microsoft.entityframeworkcore.analyzers.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.18\\microsoft.entityframeworkcore.relational.3.1.18.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.32\\microsoft.extensions.caching.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.32\\microsoft.extensions.caching.memory.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.32\\microsoft.extensions.configuration.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.32\\microsoft.extensions.configuration.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.32\\microsoft.extensions.configuration.binder.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.32\\microsoft.extensions.dependencyinjection.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.32\\microsoft.extensions.dependencyinjection.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.logging\\3.1.32\\microsoft.extensions.logging.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.32\\microsoft.extensions.logging.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.options\\3.1.32\\microsoft.extensions.options.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.32\\microsoft.extensions.primitives.3.1.32.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\npgsql\\4.1.9\\npgsql.4.1.9.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\3.1.18\\npgsql.entityframeworkcore.postgresql.3.1.18.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Client 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebApi.Client",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebApi.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Owin 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebApi.Owin",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Owin",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Host.HttpListener 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Owin.Host.HttpListener",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Hosting 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Owin.Hosting",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Newtonsoft.Json 4.5.11' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Owin 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Owin",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

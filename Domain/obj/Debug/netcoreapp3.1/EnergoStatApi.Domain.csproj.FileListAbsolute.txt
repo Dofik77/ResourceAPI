@@ -1,0 +1,10 @@
+D:\C_C#\ResourceAPI\Domain\bin\Debug\netcoreapp3.1\EnergoStatApi.Domain.deps.json
+D:\C_C#\ResourceAPI\Domain\bin\Debug\netcoreapp3.1\EnergoStatApi.Domain.dll
+D:\C_C#\ResourceAPI\Domain\bin\Debug\netcoreapp3.1\EnergoStatApi.Domain.pdb
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.csproj.AssemblyReference.cache
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.AssemblyInfoInputs.cache
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.AssemblyInfo.cs
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.csproj.CoreCompileInputs.cache
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.dll
+D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.pdb
