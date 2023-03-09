@@ -1,5 +1,6 @@
 ﻿using EnergoStatApi.Domain.Enum;
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EnergoStatApi.Domain.Interface
 {
@@ -9,7 +10,7 @@ namespace EnergoStatApi.Domain.Interface
 
         public DateTime DateOfPoint { get; set; }
 
-        public double Value { get; set; }
+        //public int value { get; set; }
 
         public TransitionMethod TransitionMethod { get; set; }
     }

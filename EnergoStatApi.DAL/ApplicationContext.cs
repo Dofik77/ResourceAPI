@@ -1,5 +1,6 @@
 ﻿using EnergoStatApi.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EnergoStatApi.DAL
 {
@@ -15,8 +16,8 @@ namespace EnergoStatApi.DAL
            
         }
 
-
         public DbSet<ElectricConsumptionModel> ElectroConsume { get; set; }
+
         public DbSet<WhaterConsumptionModel> WhaterConsume { get; set; }
     }
 }

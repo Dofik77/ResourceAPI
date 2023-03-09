@@ -1,9 +1,12 @@
-﻿using EnergoStatApi.DAL.Interfaces;
+﻿using EnergoStatApi.DAL;
+using EnergoStatApi.DAL.Interfaces;
 using EnergoStatApi.Domain.Entity;
+using EnergoStatApi.Domain.Enum;
 using EnergoStatApi.Domain.Interface;
 using EnergoStatApi.Domain.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -15,18 +18,18 @@ namespace EnergoStatApi.Controllers
     {
         private readonly IElectricConsumeRepository _electricRepository;
 
-        private ConsumptionResourceController(IElectricConsumeRepository electricRepository)
+        public ConsumptionResourceController(IElectricConsumeRepository electricRepository)
         {
             _electricRepository = electricRepository;
         }
 
-        [HttpGet, Route("ElectricConsume")]
+        [HttpGet]
         public async Task<ActionResult<List<KeyValuePair<int, double>>>> GetElectroConsumeGraph()
         {
             var resourcesVector = new ConsumptionGraphService();
             var response =  await _electricRepository.Select();
 
-            var vectorData = resourcesVector.GetConsumptionGraphService(response); 
+            var vectorData = await resourcesVector.GetConsumptionGraphService(response); 
             return vectorData;
         }
 
@@ -43,8 +46,9 @@ namespace EnergoStatApi.Controllers
     {
         public static string UploadFile()
         {
-
-            return "Ok";
+           
+           
+                return "Ok";
         }
     }
 }

@@ -13,7 +13,7 @@ namespace EnergoStatApi.DAL.Repositories
     {
         private readonly ApplicationContext _db;
 
-        private ElectricConsumptionRepository(ApplicationContext db)
+        public ElectricConsumptionRepository(ApplicationContext db)
         {
             _db = db;
         }

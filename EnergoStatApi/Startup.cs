@@ -33,9 +33,9 @@ namespace EnergoStatApi
             services.AddDbContext<ApplicationContext>(services =>
                                 services.UseNpgsql(connectionString));
 
-            services.AddControllers();
-
             services.AddScoped<IElectricConsumeRepository, ElectricConsumptionRepository>();
+
+            services.AddControllers(); 
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

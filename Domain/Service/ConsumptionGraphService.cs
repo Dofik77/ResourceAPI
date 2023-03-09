@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using EnergoStatApi.Domain.Entity;
 using EnergoStatApi.Domain.Interface;
 
@@ -7,7 +8,7 @@ namespace EnergoStatApi.Domain.Service
 {
     public class ConsumptionGraphService
     {
-        public List<KeyValuePair<int, double>> GetConsumptionGraphService<T>(List<T> values) where T : IResourceConsumption
+        public async Task<List<KeyValuePair<int, double>>> GetConsumptionGraphService<T>(List<T> values) where T : IResourceConsumption
         {
             if (values == null)
             {
@@ -20,9 +21,9 @@ namespace EnergoStatApi.Domain.Service
             foreach (var item in values)
             {
                 var dateTimeX = item.DateOfPoint.Month;
-                var resourceValueY = item.Value;
+                //var resourceValueY = item.value;
 
-                var dateValue = new KeyValuePair<int, double>(dateTimeX, resourceValueY);
+                var dateValue = new KeyValuePair<int, double>(dateTimeX, /*resourceValueY*/ 1);
 
                 resourceData.Add(dateValue);
             }
