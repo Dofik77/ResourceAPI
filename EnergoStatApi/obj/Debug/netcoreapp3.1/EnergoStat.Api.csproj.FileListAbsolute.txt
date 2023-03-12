@@ -42,3 +42,8 @@ D:\C_C#\ResourceAPI\EnergoStatApi\obj\Debug\netcoreapp3.1\EnergoStat.Api.csproj.
 D:\C_C#\ResourceAPI\EnergoStatApi\obj\Debug\netcoreapp3.1\EnergoStat.Api.dll
 D:\C_C#\ResourceAPI\EnergoStatApi\obj\Debug\netcoreapp3.1\EnergoStat.Api.pdb
 D:\C_C#\ResourceAPI\EnergoStatApi\obj\Debug\netcoreapp3.1\EnergoStat.Api.genruntimeconfig.cache
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\C_C#\ResourceAPI\EnergoStatApi\obj\Debug\netcoreapp3.1\EnergoStat.Api.MvcApplicationPartsAssemblyInfo.cs

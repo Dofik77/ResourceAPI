@@ -35,7 +35,9 @@ namespace EnergoStatApi
 
             services.AddScoped<IElectricConsumeRepository, ElectricConsumptionRepository>();
 
-            services.AddControllers(); 
+            services.AddControllers();
+
+            services.AddSwaggerGen();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -44,6 +46,13 @@ namespace EnergoStatApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(config =>
+            {
+                config.RoutePrefix = String.Empty;
+                config.SwaggerEndpoint("swagger/v1/swagger.json", "Notes API");
+            });
 
             app.UseRouting();
 

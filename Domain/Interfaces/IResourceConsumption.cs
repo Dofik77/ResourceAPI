@@ -10,7 +10,7 @@ namespace EnergoStatApi.Domain.Interface
 
         public DateTime DateOfPoint { get; set; }
 
-        //public int value { get; set; }
+        public int Value { get; set; }
 
         public TransitionMethod TransitionMethod { get; set; }
     }

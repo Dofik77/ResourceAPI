@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace EnergoStatApi.Controllers
@@ -23,32 +24,25 @@ namespace EnergoStatApi.Controllers
             _electricRepository = electricRepository;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<KeyValuePair<int, double>>>> GetElectroConsumeGraph()
+        [HttpGet("GetElectroConsumeGraph")]
+        public async Task<ActionResult<List<KeyValuePair<int, double>>>> GetElectroConsumeGraph(bool checkService)
         {
+            if (!checkService)
+                return Ok("Test Completed");
+
             var resourcesVector = new ConsumptionGraphService();
             var response =  await _electricRepository.Select();
 
             var vectorData = await resourcesVector.GetConsumptionGraphService(response); 
+            
             return vectorData;
         }
 
-        [HttpPost]
+        [HttpPost("PostConsumptaionData")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-        public async Task<ActionResult> PostConsumeData()
+        public async void PostConsumeData()
         {
-            var result = GetConsumeData.UploadFile();
-            return Ok(result);
-        }
-    }
-
-    public class GetConsumeData
-    {
-        public static string UploadFile()
-        {
-           
-           
-                return "Ok";
+            
         }
     }
 }

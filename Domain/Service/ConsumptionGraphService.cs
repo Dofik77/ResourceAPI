@@ -21,9 +21,9 @@ namespace EnergoStatApi.Domain.Service
             foreach (var item in values)
             {
                 var dateTimeX = item.DateOfPoint.Month;
-                //var resourceValueY = item.value;
+                var resourceValueY = item.Value;
 
-                var dateValue = new KeyValuePair<int, double>(dateTimeX, /*resourceValueY*/ 1);
+                var dateValue = new KeyValuePair<int, double>(dateTimeX, resourceValueY);
 
                 resourceData.Add(dateValue);
             }
