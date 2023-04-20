@@ -25,24 +25,22 @@ namespace EnergoStatApi.Controllers
         }
 
         [HttpGet("GetElectroConsumeGraph")]
-        public async Task<ActionResult<List<KeyValuePair<int, double>>>> GetElectroConsumeGraph(bool checkService)
+        public async Task<ActionResult<List<KeyValuePair<int, double>>>> GetElectroConsumeGraph()
         {
-            if (!checkService)
-                return Ok("Test Completed");
-
             var resourcesVector = new ConsumptionGraphService();
             var response =  await _electricRepository.Select();
 
             var vectorData = await resourcesVector.GetConsumptionGraphService(response); 
             
-            return vectorData;
-        }
+            return vectorData; 
+        } 
 
-        [HttpPost("PostConsumptaionData")]
+        [HttpPost("PostConsumeData")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-        public async void PostConsumeData()
+        public async Task<ActionResult<bool>> PostConsumeData(ElectricConsumptionModel electricConsumptionModel)
         {
-            
+            _electricRepository.Created(electricConsumptionModel);
+            return true; 
         }
     }
 }

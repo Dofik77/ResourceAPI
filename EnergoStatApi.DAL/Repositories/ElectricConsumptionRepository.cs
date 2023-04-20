@@ -20,7 +20,11 @@ namespace EnergoStatApi.DAL.Repositories
 
         public bool Created(ElectricConsumptionModel entity)
         {
-            throw new NotImplementedException();
+            if (entity == null)
+                return false;
+
+            _db.Add(entity);
+            return true;
         }
 
         public bool Delete(ElectricConsumptionModel entity)
