@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using EnergoStatApi.Domain.Entity;
-using EnergoStatApi.Domain.Interface;
+using EnergoStatApi.DataAccess.Interface;
 
 namespace EnergoStatApi.Domain.Service
 {

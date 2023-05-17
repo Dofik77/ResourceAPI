@@ -1,9 +1,8 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
-using EnergoStatApi.Domain.Enum;
-using EnergoStatApi.Domain.Interface;
+using EnergoStatApi.DataAccess.Enum;
+using EnergoStatApi.DataAccess.Interface;
 
-namespace EnergoStatApi.Domain.Entity
+namespace EnergoStatApi.DataAccess.Entity
 {
     public class ElectricConsumptionModel : IResourceConsumption
     {

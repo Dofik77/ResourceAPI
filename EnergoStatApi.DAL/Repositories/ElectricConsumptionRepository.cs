@@ -1,13 +1,11 @@
-﻿using EnergoStatApi.DAL.Interfaces;
-using EnergoStatApi.Domain.Entity;
+﻿using EnergoStatApi.DataAccess.Entity;
+using EnergoStatApi.DataAccess.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace EnergoStatApi.DAL.Repositories
+namespace EnergoStatApi.DataAccess.Repositories
 {
     public class ElectricConsumptionRepository : IElectricConsumeRepository
     {

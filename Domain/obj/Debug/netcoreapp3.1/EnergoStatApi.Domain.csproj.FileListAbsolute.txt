@@ -8,3 +8,16 @@ D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.Assembly
 D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.csproj.CoreCompileInputs.cache
 D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.dll
 D:\C_C#\ResourceAPI\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.pdb
+H:\.net projects\resourceApi\Domain\bin\Debug\netcoreapp3.1\EnergoStatApi.Domain.deps.json
+H:\.net projects\resourceApi\Domain\bin\Debug\netcoreapp3.1\EnergoStatApi.Domain.dll
+H:\.net projects\resourceApi\Domain\bin\Debug\netcoreapp3.1\EnergoStatApi.Domain.pdb
+H:\.net projects\resourceApi\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.csproj.AssemblyReference.cache
+H:\.net projects\resourceApi\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+H:\.net projects\resourceApi\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.AssemblyInfoInputs.cache
+H:\.net projects\resourceApi\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.AssemblyInfo.cs
+H:\.net projects\resourceApi\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.csproj.CoreCompileInputs.cache
+H:\.net projects\resourceApi\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.dll
+H:\.net projects\resourceApi\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.pdb
+H:\.net projects\resourceApi\Domain\bin\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.dll
+H:\.net projects\resourceApi\Domain\bin\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.pdb
+H:\.net projects\resourceApi\Domain\obj\Debug\netcoreapp3.1\EnergoStatApi.Domain.csproj.CopyComplete

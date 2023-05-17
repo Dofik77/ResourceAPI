@@ -5,9 +5,9 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergoStat.Api", "EnergoStatApi\EnergoStat.Api.csproj", "{252B7E1B-519D-4131-84B3-C7759E836973}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergoStatApi.Domain", "Domain\EnergoStatApi.Domain.csproj", "{6EEB12F2-DD38-44BE-8B64-84F929E7F08D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergoStatApi.Domain", "Domain\EnergoStatApi.Domain.csproj", "{6EEB12F2-DD38-44BE-8B64-84F929E7F08D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergoStatApi.DAL", "EnergoStatApi.DAL\EnergoStatApi.DAL.csproj", "{0E370791-C183-4A7B-97DC-87414AD936BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergoStatApi.DataAccess", "EnergoStatApi.DAL\EnergoStatApi.DataAccess.csproj", "{0E370791-C183-4A7B-97DC-87414AD936BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

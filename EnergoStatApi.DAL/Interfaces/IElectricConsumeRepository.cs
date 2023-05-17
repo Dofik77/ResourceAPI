@@ -1,6 +1,6 @@
-﻿using EnergoStatApi.Domain.Entity;
+﻿using EnergoStatApi.DataAccess.Entity;
 
-namespace EnergoStatApi.DAL.Interfaces
+namespace EnergoStatApi.DataAccess.Interfaces
 {
     public interface IElectricConsumeRepository : IBaseRepository<ElectricConsumptionModel>
     {

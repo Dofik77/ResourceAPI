@@ -1,0 +1,10 @@
+H:\.net projects\resourceApi\EnergoStatApi.DAL\bin\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.deps.json
+H:\.net projects\resourceApi\EnergoStatApi.DAL\bin\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.dll
+H:\.net projects\resourceApi\EnergoStatApi.DAL\bin\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.pdb
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.csproj.AssemblyReference.cache
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.AssemblyInfoInputs.cache
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.AssemblyInfo.cs
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.csproj.CoreCompileInputs.cache
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.dll
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.pdb

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace EnergoStatApi.DAL.Interfaces
+namespace EnergoStatApi.DataAccess.Interfaces
 {
     public interface IBaseRepository<T>
     {

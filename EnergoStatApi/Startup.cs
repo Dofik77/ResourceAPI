@@ -1,22 +1,16 @@
-using EnergoStatApi.DAL.Repositories;
-using EnergoStatApi.DAL.Interfaces;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using EnergoStatApi.DAL;
-
 namespace EnergoStatApi
 {
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using System;
+    using EnergoStatApi.DataAccess;
+    using EnergoStatApi.DataAccess.Interfaces;
+    using EnergoStatApi.DataAccess.Repositories;
+
     public class Startup
     {
         public IConfiguration Configuration { get; }

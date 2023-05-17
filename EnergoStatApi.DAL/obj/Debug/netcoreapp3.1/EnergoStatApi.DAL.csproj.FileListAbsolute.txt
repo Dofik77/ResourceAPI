@@ -11,3 +11,16 @@ D:\C_C#\ResourceAPI\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.
 D:\C_C#\ResourceAPI\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.csproj.CopyComplete
 D:\C_C#\ResourceAPI\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.dll
 D:\C_C#\ResourceAPI\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.pdb
+H:\.net projects\resourceApi\EnergoStatApi.DAL\bin\Debug\netcoreapp3.1\EnergoStatApi.DAL.deps.json
+H:\.net projects\resourceApi\EnergoStatApi.DAL\bin\Debug\netcoreapp3.1\EnergoStatApi.DAL.dll
+H:\.net projects\resourceApi\EnergoStatApi.DAL\bin\Debug\netcoreapp3.1\EnergoStatApi.DAL.pdb
+H:\.net projects\resourceApi\EnergoStatApi.DAL\bin\Debug\netcoreapp3.1\EnergoStatApi.Domain.dll
+H:\.net projects\resourceApi\EnergoStatApi.DAL\bin\Debug\netcoreapp3.1\EnergoStatApi.Domain.pdb
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.csproj.AssemblyReference.cache
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.GeneratedMSBuildEditorConfig.editorconfig
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.AssemblyInfoInputs.cache
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.AssemblyInfo.cs
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.csproj.CoreCompileInputs.cache
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.csproj.CopyComplete
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.dll
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DAL.pdb

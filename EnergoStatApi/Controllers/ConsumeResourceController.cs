@@ -1,8 +1,5 @@
-﻿using EnergoStatApi.DAL;
-using EnergoStatApi.DAL.Interfaces;
-using EnergoStatApi.Domain.Entity;
-using EnergoStatApi.Domain.Enum;
-using EnergoStatApi.Domain.Interface;
+﻿using EnergoStatApi.DataAccess.Entity;
+using EnergoStatApi.DataAccess.Interfaces;
 using EnergoStatApi.Domain.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

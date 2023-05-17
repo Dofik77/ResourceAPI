@@ -1,8 +1,7 @@
-﻿using EnergoStatApi.Domain.Enum;
+﻿using EnergoStatApi.DataAccess.Enum;
 using System;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EnergoStatApi.Domain.Interface
+namespace EnergoStatApi.DataAccess.Interface
 {
     public interface IResourceConsumption
     {

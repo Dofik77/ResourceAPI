@@ -1,8 +1,7 @@
-﻿using EnergoStatApi.Domain.Entity;
+﻿using EnergoStatApi.DataAccess.Entity;
 using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EnergoStatApi.DAL
+namespace EnergoStatApi.DataAccess
 {
     public class ApplicationContext : DbContext
     {

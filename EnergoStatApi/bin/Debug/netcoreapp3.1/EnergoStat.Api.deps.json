@@ -31,8 +31,8 @@
     ".NETCoreApp,Version=v3.1": {
       "EnergoStat.Api/1.0.0": {
         "dependencies": {
-          "EnergoStatApi.DAL": "1.0.0",
           "EnergoStatApi.Domain": "1.0.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.2",
           "Swashbuckle.AspNetCore": "6.5.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -546,6 +546,7 @@
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
         }
       },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.2": {},
       "Npgsql/4.1.9": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.6.0"
@@ -648,20 +649,22 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.6.0": {},
-      "EnergoStatApi.DAL/1.0.0": {
+      "EnergoStatApi.DataAccess/1.0.0": {
         "dependencies": {
-          "EnergoStatApi.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.32",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "3.1.18"
         },
         "runtime": {
-          "EnergoStatApi.DAL.dll": {}
+          "EnergoStatApi.DataAccess.dll": {}
         },
         "compile": {
-          "EnergoStatApi.DAL.dll": {}
+          "EnergoStatApi.DataAccess.dll": {}
         }
       },
       "EnergoStatApi.Domain/1.0.0": {
+        "dependencies": {
+          "EnergoStatApi.DataAccess": "1.0.0"
+        },
         "runtime": {
           "EnergoStatApi.Domain.dll": {}
         },
@@ -2424,6 +2427,13 @@
       "path": "microsoft.openapi/1.2.3",
       "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
     },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5daNXm8Hb016oETmuHXiW8jclmRR9CzM7XrOh2htYhQ/7AAYtqntZ1MrZkh09+JTtdjYdGsy2XIMPe9cg83x5w==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.17.2",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
+    },
     "Npgsql/4.1.9": {
       "type": "package",
       "serviceable": true,
@@ -2494,7 +2504,7 @@
       "path": "system.runtime.compilerservices.unsafe/4.6.0",
       "hashPath": "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
     },
-    "EnergoStatApi.DAL/1.0.0": {
+    "EnergoStatApi.DataAccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
