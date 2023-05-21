@@ -8,3 +8,6 @@ H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoSta
 H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.csproj.CoreCompileInputs.cache
 H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.dll
 H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.pdb
+H:\.net projects\resourceApi\EnergoStatApi.DAL\bin\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.runtimeconfig.json
+H:\.net projects\resourceApi\EnergoStatApi.DAL\bin\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.runtimeconfig.dev.json
+H:\.net projects\resourceApi\EnergoStatApi.DAL\obj\Debug\netcoreapp3.1\EnergoStatApi.DataAccess.genruntimeconfig.cache

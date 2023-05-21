@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "iCg5XbEcfBH+xlXnf0GuyH/4QOe7PXQmH/i4SQvh72A=",
+  "Source": "EnergoStat.Api",
+  "BasePath": "_content/EnergoStat.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

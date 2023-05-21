@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\khoro\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\khoro\\.nuget\\packages"
+    ]
+  }
+}

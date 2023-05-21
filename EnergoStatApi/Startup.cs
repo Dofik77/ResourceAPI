@@ -10,6 +10,9 @@ namespace EnergoStatApi
     using EnergoStatApi.DataAccess;
     using EnergoStatApi.DataAccess.Interfaces;
     using EnergoStatApi.DataAccess.Repositories;
+    using EnergoStatApi.DataAccess.Entity;
+    using EnergoStatApi.Domain.Service;
+    using EnergoStatApi.Domain.Interfaces;
 
     public class Startup
     {
@@ -27,7 +30,10 @@ namespace EnergoStatApi
             services.AddDbContext<ApplicationContext>(services =>
                                 services.UseNpgsql(connectionString));
 
-            services.AddScoped<IElectricConsumeRepository, ElectricConsumptionRepository>();
+            services.AddScoped<IBaseRepository<ElectricRate>, ElectricRateRepository>();
+            //services.AddScoped<IBaseRepository<ColdWhaterRate>, ElectricRateRepository>();
+            //services.AddScoped<IBaseRepository<WarmWhaterRate>, ElectricRateRepository>();
+            services.AddScoped<IRateGraphService, RateGraphService>();
 
             services.AddControllers();
 

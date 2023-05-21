@@ -9,7 +9,7 @@ namespace EnergoStatApi.DataAccess.Interfaces
 
         T Get(int id);
 
-        Task<List<T>> Select();
+        IQueryable<T> GetAll();
 
         bool Delete(T entity);
     }

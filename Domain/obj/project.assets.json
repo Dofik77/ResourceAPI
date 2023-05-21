@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net6.0": {
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -346,7 +346,7 @@
       },
       "EnergoStatApi.DataAccess/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.32",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "3.1.18"
@@ -852,7 +852,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net6.0": [
       "EnergoStatApi.DataAccess >= 1.0.0"
     ]
   },
@@ -873,15 +873,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        ".net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": ".net6.0",
           "projectReferences": {
             "H:\\.net projects\\resourceApi\\EnergoStatApi.DAL\\EnergoStatApi.DataAccess.csproj": {
               "projectPath": "H:\\.net projects\\resourceApi\\EnergoStatApi.DAL\\EnergoStatApi.DataAccess.csproj"
@@ -896,8 +896,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net6.0": {
+        "targetAlias": ".net6.0",
         "imports": [
           "net461",
           "net462",

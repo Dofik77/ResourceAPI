@@ -1,16 +1,15 @@
-﻿using EnergoStatApi.DataAccess.Enum;
-using System;
+﻿using System;
 
 namespace EnergoStatApi.DataAccess.Interface
 {
-    public interface IResourceConsumption
+    public interface IResourceRate
     {
-        public int Id { get; set; }
+        public int ForeignKey { get; set; }
 
-        public DateTime DateOfPoint { get; set; }
+        public DateTime DateOfIndication { get; set; }
 
-        public int Value { get; set; }
+        public float IndicationRate { get; set; }
 
-        public TransitionMethod TransitionMethod { get; set; }
+        public float TariffPlan { get; set; }
     }
 }

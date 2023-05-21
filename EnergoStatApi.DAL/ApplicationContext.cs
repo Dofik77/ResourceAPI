@@ -5,6 +5,11 @@ namespace EnergoStatApi.DataAccess
 {
     public class ApplicationContext : DbContext
     {
+        public DbSet<ElectricRate> ElectroRate { get; set; }
+        public DbSet<WarmWhaterRate> WarmWhaterRate { get; set; }
+        public DbSet<ColdWhaterRate> ColdWhaterRate { get; set; }
+        public DbSet<User> Users { get; set; }
+
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {
             Database.EnsureCreated();
@@ -14,9 +19,5 @@ namespace EnergoStatApi.DataAccess
         {
            
         }
-
-        public DbSet<ElectricConsumptionModel> ElectroConsume { get; set; }
-
-        public DbSet<WhaterConsumptionModel> WhaterConsume { get; set; }
     }
 }
