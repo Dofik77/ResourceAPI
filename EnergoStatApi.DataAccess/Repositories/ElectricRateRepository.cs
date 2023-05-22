@@ -18,18 +18,10 @@ namespace EnergoStatApi.DataAccess.Repositories
             return _db.ElectroRate;
         }
 
-        public bool Created(ElectricRate entity)
+        public async Task Add(ElectricRate electricRate)
         {
-            if (entity == null)
-                return false;
-
-            _db.Add(entity);
-            return true;
-        }
-
-        public ElectricRate Get(int id)
-        {
-            throw new NotImplementedException();
+            await _db.ElectroRate.AddAsync(electricRate);
+            await _db.SaveChangesAsync();
         }
 
         public bool Delete(ElectricRate entity)

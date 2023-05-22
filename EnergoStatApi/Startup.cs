@@ -31,9 +31,11 @@ namespace EnergoStatApi
                                 services.UseNpgsql(connectionString));
 
             services.AddScoped<IBaseRepository<ElectricRate>, ElectricRateRepository>();
+            services.AddScoped<IBaseRepository<WarmWhaterRate>, WarmWhaterRateRepository>();
+            services.AddScoped<IBaseRepository<ColdWhaterRate>, ColdWhaterRateRepository>();
+            services.AddScoped<IBaseRepository<AuthenticationUser>, AuthenticationUserRepository>();
             services.AddScoped<IBaseRepository<User>, UserRepository>();
-           // services.AddScoped<IBaseRepository<WarmWhaterRate>, ElectricRateRepository>();
-           // services.AddScoped<IBaseRepository<WarmWhaterRate>, ElectricRateRepository>();
+
             services.AddScoped<IRateGraphService, RateGraphService>();
             services.AddScoped<IAccountService, AccountService>();
 

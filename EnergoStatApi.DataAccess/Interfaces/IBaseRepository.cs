@@ -5,9 +5,7 @@ namespace EnergoStatApi.DataAccess.Interfaces
 {
     public interface IBaseRepository<T>
     {
-        bool Created(T entity);
-
-        T Get(int id);
+        Task Add(T entity);
 
         IQueryable<T> GetAll();
 

@@ -41,3 +41,6 @@ H:\.net projects\resourceApi\EnergoStatApi\obj\Debug\.net6.0\refint\EnergoStat.A
 H:\.net projects\resourceApi\EnergoStatApi\obj\Debug\.net6.0\EnergoStat.Api.pdb
 H:\.net projects\resourceApi\EnergoStatApi\obj\Debug\.net6.0\EnergoStat.Api.genruntimeconfig.cache
 H:\.net projects\resourceApi\EnergoStatApi\obj\Debug\.net6.0\ref\EnergoStat.Api.dll
+H:\.net projects\resourceApi\EnergoStatApi\bin\Debug\.net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+H:\.net projects\resourceApi\EnergoStatApi\bin\Debug\.net6.0\Microsoft.Extensions.DependencyModel.dll
+H:\.net projects\resourceApi\EnergoStatApi\bin\Debug\.net6.0\Newtonsoft.Json.dll

@@ -1,12 +1,9 @@
-﻿using EnergoStatApi.DataAccess.Entity;
-using EnergoStatApi.DataAccess.Interfaces;
-using EnergoStatApi.Domain.Entity;
-using EnergoStatApi.Domain.Interfaces;
-using EnergoStatApi.Domain.Service;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-namespace EnergoStatApi.Controllers
+﻿namespace EnergoStatApi.Controllers
 {
+    using EnergoStatApi.Domain.Entity;
+    using EnergoStatApi.Domain.Interfaces;
+    using Microsoft.AspNetCore.Mvc;
+
     [Route("api/rateResource")]
     [ApiController]
     public class RateResourceController : ControllerBase
@@ -21,18 +18,11 @@ namespace EnergoStatApi.Controllers
         [HttpGet("getRateGraph")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(RateGraphModel))]
-        public async Task<ActionResult<List<RateGraphModel>>> GetResourceRateGraph([FromQuery] int resourceTypeNumber)
+        public async Task<ActionResult<List<RateGraphModel>>> GetResourceRateGraph([FromQuery] int resourceTypeNumber, 
+            DateTime dateStartRateResource, DateTime dateEndRateResource)
         {
-            var graphData = await _graphService.GetRateGraph(resourceTypeNumber);
+            var graphData = await _graphService.GetRateGraph(resourceTypeNumber, dateStartRateResource, dateEndRateResource);
             return graphData == null ? NotFound() : graphData;
         } 
-
-        //[HttpPost("PostRateData")]
-        //[ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-        //public async Task<ActionResult<bool>> PostRateData(ElectricRate electricConsumptionModel)
-        //{ 
-        //    _electricRepository.Created(electricConsumptionModel);
-        //    return true; 
-        //}
     }
 }

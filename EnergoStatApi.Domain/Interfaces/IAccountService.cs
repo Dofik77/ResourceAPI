@@ -8,7 +8,7 @@ namespace EnergoStatApi.Domain.Interfaces
     {
         void Register(RegistrationModel model);
 
-        //Task<ClaimsIdentity> Login(LoginModel model);
+        void Login(LoginModel model);
 
         //Task<bool> ChangePassword(ChangePasswordModel model);
     }

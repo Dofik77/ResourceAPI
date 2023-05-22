@@ -12,21 +12,7 @@ namespace EnergoStatApi.DataAccess.Repositories
             _db = db;
         }
 
-        public bool Created(User entity)
-        {
-            if (entity == null)
-                return false;
-
-            _db.Add(entity);
-            return true;
-        }
-
         public bool Delete(User entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public User Get(int id)
         {
             throw new NotImplementedException();
         }
@@ -34,6 +20,12 @@ namespace EnergoStatApi.DataAccess.Repositories
         public IQueryable<User> GetAll()
         {
             return _db.Users;
+        }
+
+        public async Task Add(User users)
+        {
+            await _db.Users.AddAsync(users);
+            await _db.SaveChangesAsync();
         }
     }
 }

@@ -9,6 +9,7 @@ namespace EnergoStatApi.DataAccess
         public DbSet<WarmWhaterRate> WarmWhaterRate { get; set; }
         public DbSet<ColdWhaterRate> ColdWhaterRate { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<AuthenticationUser> AuthUsers { get; set; }
 
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {

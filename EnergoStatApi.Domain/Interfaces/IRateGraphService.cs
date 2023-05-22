@@ -10,6 +10,6 @@ namespace EnergoStatApi.Domain.Interfaces
 {
     public interface IRateGraphService
     {
-        public Task<List<RateGraphModel>> GetRateGraph(int numberResourceType);
+        public Task<List<RateGraphModel>> GetRateGraph(int numberResourceType, DateTime dateStartOfIndication, DateTime dateEndOfIndication);
     }
 }
