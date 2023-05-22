@@ -4,73 +4,14 @@
     "H:\\.net projects\\resourceApi\\EnergoStatApi\\EnergoStat.Api.csproj": {}
   },
   "projects": {
-    "H:\\.net projects\\resourceApi\\Domain\\EnergoStatApi.Domain.csproj": {
+    "H:\\.net projects\\resourceApi\\EnergoStatApi.DataAccess\\EnergoStatApi.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\.net projects\\resourceApi\\Domain\\EnergoStatApi.Domain.csproj",
-        "projectName": "EnergoStatApi.Domain",
-        "projectPath": "H:\\.net projects\\resourceApi\\Domain\\EnergoStatApi.Domain.csproj",
-        "packagesPath": "C:\\Users\\khoro\\.nuget\\packages\\",
-        "outputPath": "H:\\.net projects\\resourceApi\\Domain\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\khoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          ".net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": ".net6.0",
-            "projectReferences": {
-              "H:\\.net projects\\resourceApi\\EnergoStatApi.DAL\\EnergoStatApi.DataAccess.csproj": {
-                "projectPath": "H:\\.net projects\\resourceApi\\EnergoStatApi.DAL\\EnergoStatApi.DataAccess.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": ".net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "H:\\.net projects\\resourceApi\\EnergoStatApi.DAL\\EnergoStatApi.DataAccess.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "H:\\.net projects\\resourceApi\\EnergoStatApi.DAL\\EnergoStatApi.DataAccess.csproj",
+        "projectUniqueName": "H:\\.net projects\\resourceApi\\EnergoStatApi.DataAccess\\EnergoStatApi.DataAccess.csproj",
         "projectName": "EnergoStatApi.DataAccess",
-        "projectPath": "H:\\.net projects\\resourceApi\\EnergoStatApi.DAL\\EnergoStatApi.DataAccess.csproj",
+        "projectPath": "H:\\.net projects\\resourceApi\\EnergoStatApi.DataAccess\\EnergoStatApi.DataAccess.csproj",
         "packagesPath": "C:\\Users\\khoro\\.nuget\\packages\\",
-        "outputPath": "H:\\.net projects\\resourceApi\\EnergoStatApi.DAL\\obj\\",
+        "outputPath": "H:\\.net projects\\resourceApi\\EnergoStatApi.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\khoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,7 +71,72 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\.net projects\\resourceApi\\EnergoStatApi.Domain\\EnergoStatApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\.net projects\\resourceApi\\EnergoStatApi.Domain\\EnergoStatApi.Domain.csproj",
+        "projectName": "EnergoStatApi.Domain",
+        "projectPath": "H:\\.net projects\\resourceApi\\EnergoStatApi.Domain\\EnergoStatApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\khoro\\.nuget\\packages\\",
+        "outputPath": "H:\\.net projects\\resourceApi\\EnergoStatApi.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\khoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          ".net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": ".net6.0",
+            "projectReferences": {
+              "H:\\.net projects\\resourceApi\\EnergoStatApi.DataAccess\\EnergoStatApi.DataAccess.csproj": {
+                "projectPath": "H:\\.net projects\\resourceApi\\EnergoStatApi.DataAccess\\EnergoStatApi.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": ".net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -152,14 +158,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": ".net6.0",
             "projectReferences": {
-              "H:\\.net projects\\resourceApi\\Domain\\EnergoStatApi.Domain.csproj": {
-                "projectPath": "H:\\.net projects\\resourceApi\\Domain\\EnergoStatApi.Domain.csproj"
+              "H:\\.net projects\\resourceApi\\EnergoStatApi.Domain\\EnergoStatApi.Domain.csproj": {
+                "projectPath": "H:\\.net projects\\resourceApi\\EnergoStatApi.Domain\\EnergoStatApi.Domain.csproj"
               }
             }
           }
@@ -202,7 +209,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

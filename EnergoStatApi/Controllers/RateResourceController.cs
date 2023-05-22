@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 namespace EnergoStatApi.Controllers
 {
-    [Route("api/RateResource")]
+    [Route("api/rateResource")]
     [ApiController]
     public class RateResourceController : ControllerBase
     {
@@ -18,7 +18,7 @@ namespace EnergoStatApi.Controllers
             _graphService = graphService;
         }
 
-        [HttpGet("GetRateGraph")]
+        [HttpGet("getRateGraph")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(RateGraphModel))]
         public async Task<ActionResult<List<RateGraphModel>>> GetResourceRateGraph([FromQuery] int resourceTypeNumber)

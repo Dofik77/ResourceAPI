@@ -5,9 +5,9 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergoStat.Api", "EnergoStatApi\EnergoStat.Api.csproj", "{252B7E1B-519D-4131-84B3-C7759E836973}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergoStatApi.Domain", "Domain\EnergoStatApi.Domain.csproj", "{6EEB12F2-DD38-44BE-8B64-84F929E7F08D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergoStatApi.DataAccess", "EnergoStatApi.DataAccess\EnergoStatApi.DataAccess.csproj", "{082DB3A2-04B4-494C-BEA0-D978E50EB544}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergoStatApi.DataAccess", "EnergoStatApi.DAL\EnergoStatApi.DataAccess.csproj", "{0E370791-C183-4A7B-97DC-87414AD936BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergoStatApi.Domain", "EnergoStatApi.Domain\EnergoStatApi.Domain.csproj", "{27A9DF87-9FCD-4CEF-9008-CC4B8338A74C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{252B7E1B-519D-4131-84B3-C7759E836973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{252B7E1B-519D-4131-84B3-C7759E836973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{252B7E1B-519D-4131-84B3-C7759E836973}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6EEB12F2-DD38-44BE-8B64-84F929E7F08D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EEB12F2-DD38-44BE-8B64-84F929E7F08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EEB12F2-DD38-44BE-8B64-84F929E7F08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EEB12F2-DD38-44BE-8B64-84F929E7F08D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E370791-C183-4A7B-97DC-87414AD936BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E370791-C183-4A7B-97DC-87414AD936BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E370791-C183-4A7B-97DC-87414AD936BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E370791-C183-4A7B-97DC-87414AD936BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082DB3A2-04B4-494C-BEA0-D978E50EB544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082DB3A2-04B4-494C-BEA0-D978E50EB544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082DB3A2-04B4-494C-BEA0-D978E50EB544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082DB3A2-04B4-494C-BEA0-D978E50EB544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A9DF87-9FCD-4CEF-9008-CC4B8338A74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A9DF87-9FCD-4CEF-9008-CC4B8338A74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A9DF87-9FCD-4CEF-9008-CC4B8338A74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A9DF87-9FCD-4CEF-9008-CC4B8338A74C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
