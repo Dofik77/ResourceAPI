@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO.Compression;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
-namespace EnergoStatApi.Domain.Service
+﻿namespace EnergoStatApi.Domain.Service
 {
     using EnergoStatApi.DataAccess.Entity;
     using EnergoStatApi.DataAccess.Enum;

@@ -19,7 +19,7 @@
         {
             var user = _usersRepository.GetAll().FirstOrDefault(x => x.Name == model.Name);
 
-            if (user == null)
+            if (user == null || model.Password != user.Password)
                throw new Exception();
 
             var authUser = new AuthenticationUser

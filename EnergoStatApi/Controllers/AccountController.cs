@@ -16,15 +16,17 @@
         }
 
         [HttpPost("Register")]
-        public void Register(RegistrationModel model)
+        public IActionResult Register(RegistrationModel model)
         {
-             _accountService.Register(model);
+            _accountService.Register(model);
+            return Ok(model);
         }
 
         [HttpPost("Login")]
-        public void Login(LoginModel model)
+        public IActionResult Login(LoginModel model)
         {
             _accountService.Login(model);
+            return Ok(model);
         }
     }
 }
